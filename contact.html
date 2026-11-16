@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ติดต่อเรา – Coffee Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href="index.html">Coffee<span>Corner</span></a>
+      <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a class="active" href="contact.html">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-title">
+      <h1>ติดต่อเรา</h1>
+      <p>กรอกฟอร์มด้านล่าง แล้วเราจะตอบกลับโดยเร็วที่สุด</p>
+    </div>
+
+    <div class="form-card">
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">ชื่อ</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="เช่น สมชาย ใจดี">
+          <div class="msg">กรุณากรอกชื่ออย่างน้อย 2 ตัวอักษร</div>
+        </div>
+
+        <div class="field">
+          <label for="email">อีเมล</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <div class="msg">รูปแบบอีเมลไม่ถูกต้อง</div>
+        </div>
+
+        <div class="field">
+          <label for="topic">หัวข้อ</label>
+          <select id="topic" name="topic">
+            <option value="">— เลือกหัวข้อ —</option>
+            <option>ถามเรื่องวิธีชง</option>
+            <option>แนะนำเมล็ดกาแฟ</option>
+            <option>อื่น ๆ</option>
+          </select>
+          <div class="msg">กรุณาเลือกหัวข้อ</div>
+        </div>
+
+        <div class="field">
+          <label for="message">ข้อความ</label>
+          <textarea id="message" name="message" maxlength="300" placeholder="เล่าให้เราฟังหน่อย…"></textarea>
+          <div class="counter"><span id="count">0</span>/300</div>
+          <div class="msg">กรุณาเขียนข้อความอย่างน้อย 10 ตัวอักษร</div>
+        </div>
+
+        <button class="btn" type="submit" id="submit">ส่งข้อความ</button>
+      </form>
+
+      <div class="success" id="success" role="status">
+        <div class="big">🎉</div>
+        <h2>ส่งเรียบร้อยแล้ว</h2>
+        <p id="success-text" style="color:var(--muted)"></p>
+        <button class="btn" type="button" id="again">ส่งอีกข้อความ</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Coffee Corner · เว็บตัวอย่างสำหรับทดสอบ (ฟอร์มนี้ไม่ได้ส่งข้อมูลไปที่ใด)</footer>
+  <script src="script.js"></script>
+</body>
+</html>
