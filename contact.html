@@ -25,6 +25,7 @@
       <p>กรอกฟอร์มด้านล่าง แล้วเราจะตอบกลับโดยเร็วที่สุด</p>
     </div>
 
+    <div class="contact-grid">
     <div class="form-card">
       <form id="contact-form" novalidate>
         <div class="field">
@@ -66,6 +67,47 @@
         <p id="success-text" style="color:var(--muted)"></p>
         <button class="btn" type="button" id="again">ส่งอีกข้อความ</button>
       </div>
+    </div>
+
+    <aside class="art" aria-hidden="true">
+      <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="cupG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d28a45"/>
+            <stop offset="1" stop-color="#8a4a12"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#f3dcc1"/>
+            <stop offset="1" stop-color="#f3dcc1" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <circle class="glow" cx="200" cy="260" r="190" fill="url(#glow)"/>
+
+        <!-- floating beans -->
+        <g class="bean b1"><ellipse cx="70" cy="110" rx="16" ry="24" fill="#5b3418" transform="rotate(-30 70 110)"/><path d="M62 124 Q72 108 78 94" stroke="#f3dcc1" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+        <g class="bean b2"><ellipse cx="335" cy="150" rx="14" ry="21" fill="#7a4a24" transform="rotate(35 335 150)"/><path d="M342 162 Q333 148 328 136" stroke="#f3dcc1" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+        <g class="bean b3"><ellipse cx="320" cy="390" rx="15" ry="22" fill="#5b3418" transform="rotate(-15 320 390)"/><path d="M316 404 Q322 388 324 374" stroke="#f3dcc1" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+        <g class="bean b4"><ellipse cx="60" cy="360" rx="12" ry="18" fill="#7a4a24" transform="rotate(50 60 360)"/><path d="M67 370 Q58 358 54 348" stroke="#f3dcc1" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+
+        <!-- steam -->
+        <path class="steam s1" d="M165 190 C150 165 180 150 165 120 C155 100 175 90 170 70" />
+        <path class="steam s2" d="M200 185 C185 160 215 145 200 115 C190 95 210 85 205 65" />
+        <path class="steam s3" d="M235 190 C220 165 250 150 235 120 C225 100 245 90 240 70" />
+
+        <!-- cup + saucer -->
+        <g class="cup">
+          <ellipse cx="200" cy="395" rx="125" ry="22" fill="#e6d3bd"/>
+          <ellipse cx="200" cy="388" rx="105" ry="16" fill="#f4e8d9"/>
+          <path d="M110 230 H290 V300 C290 350 250 385 200 385 C150 385 110 350 110 300 Z" fill="url(#cupG)"/>
+          <path d="M290 255 C335 250 335 330 285 335" stroke="#8a4a12" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <ellipse cx="200" cy="230" rx="90" ry="16" fill="#3b2314"/>
+          <ellipse cx="200" cy="228" rx="70" ry="10" fill="#5b3418"/>
+          <path d="M140 280 Q150 340 185 362" stroke="#fff" stroke-opacity=".22" stroke-width="8" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <p class="art-cap">มาคุยเรื่องกาแฟกันนะ ☕</p>
+    </aside>
     </div>
   </main>
 
